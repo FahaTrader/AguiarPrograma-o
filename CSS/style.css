@@ -1,0 +1,8 @@
+.container-fluid{
+    padding: 1% 10%;
+}
+
+.navbar{
+    display: flex;
+    white-space: 25%;
+}
