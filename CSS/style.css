@@ -1,8 +1,238 @@
-.container-fluid{
-    padding: 1% 10%;
+html, body{
+    font-family: "Sora", sans-serif;
 }
 
-.navbar{
+.container-fluid{
+    padding: 0 10%;
+}
+
+.bg{
+    background-image: url(../static/Design\ sem\ nome.jpg);
+    width: 100%;
+}
+
+.navbar-brand img{
+    width: 180px;
+}
+
+.nav-link{
+    font-weight: bold;
+    padding-left: 35px !important;
+    padding-right: 35px !important;
+}
+
+.nav-link:hover{
+    text-decoration: underline 4px solid white;
+    padding-top: 15px;
+}
+
+.container-links{
+    margin-left: 100px;
+}
+
+.container-redes{
+    margin-left: 100px;
+}
+
+.container-redes i{
+    margin-left: 10px;
+    font-size: 18px;
+}
+
+.container-redes i:hover{
+    animation: translateY 0.8s infinite alternate;
+}
+
+@keyframes translateY{
+    from{
+        transform: translateY(0) scale(1);
+    }
+    to{
+        transform: translateY(-8px) scale(1.1);
+    }
+}
+
+/*----- Hero Section -----*/
+#hero{
     display: flex;
-    white-space: 25%;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+#hero .container-title{
+    flex-direction: column;
+    margin-top: 40px;
+    text-align: center;
+    margin-left: 110px;
+}
+
+.title-hero{
+    font-size: 50px;
+}
+
+#hero span{
+    color: white;
+    line-height: 150%;
+    max-width: 940px;
+    margin-top: 25px;
+    font-size: 25px;
+}
+
+.button-hero{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 25px;
+    gap: 15px;
+    padding-bottom: 25px;
+}
+
+.btn {
+    padding: 1% 5%;
+}
+
+.btn-serviços{
+    background-color: transparent;
+    color: white;
+    border: solid 0.5px;
+    border-radius: 5px;
+}
+
+.btn-serviços:hover{
+    background-color: white;
+    color: black;
+}
+
+.btn:hover{
+    animation: scaleButton 0.8s infinite;
+}
+
+@keyframes scaleButton {
+    from{
+        transform: scale(1);
+    }
+    to{
+        transform: scale(1.07);
+    }
+}
+
+/* ----- Service Section ----- */
+.service{
+    text-align: center;
+}
+
+.service-title{
+    text-align: center;
+    font-weight: bold;
+    color: black;
+    padding-top: 25px;
+    text-decoration: underline;
+}
+
+.imgService{
+    width: 350px;
+    float: left;
+}
+
+.descriptionService{
+    margin-top: 80px;
+}
+
+.descriptionService p{
+    font-size: 26px;
+    color: black;
+}
+
+.img-landing{
+    width: 350px;
+    float: right;
+}
+
+.imgWpp{
+    width: 350px;
+}
+
+/*----- About Section -----*/
+.About{
+    background-image: url(/static/Design\ sem\ nome\ \(13\).png);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.about-title{
+    color: white;
+    text-align: center;
+    padding-top: 25px;
+    text-decoration: underline;
+    font-size: 26px;
+}
+
+.img-about{
+    width: 400px;
+}
+
+.aboutDescription {
+    color: white;
+}
+
+@media (max-width: 546px) {
+    .container-fluid{
+        padding: 0 1%;
+    }
+
+    .bg{
+        width: 100%;
+    }
+
+    .navbar-brand img{
+        width: 150px;
+        margin-left: -20px;
+    }
+
+    .nav-link{
+        margin-left: 0!important;
+        text-align: center;
+    }
+
+    .container-links{
+        text-align: center;
+        margin-left: 0;
+    }
+
+    .container-redes{
+        margin-left: 0;
+        text-align: center;
+        margin-top: 10px;
+    }
+
+    /*----- Hero Section -----*/
+
+    #hero{
+        display: block;
+        align-items: start;
+        justify-content: start;
+    }
+
+    #hero .container-title{
+        margin-top: 25px;
+        text-align: center;
+        margin-left: 0;
+    }
+
+    #hero .title-hero{
+        color: white;
+        font-size: 32px;
+    }
+
+    .btn {
+        padding: 2% 6%;
+    }
+
+    .descriptionService p{
+        margin-top: 10px;
+        font-size: 20px;
+    }
 }
