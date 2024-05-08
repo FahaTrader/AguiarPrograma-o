@@ -357,6 +357,13 @@ h1 {
       text-align: center;
   }
 
+  .container-cards{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
   .imgService{
       width: 335px;
   }
@@ -364,6 +371,14 @@ h1 {
   .descriptionService p{
       margin-top: 10px;
       font-size: 20px;
+  }
+
+  .serviceLanding p{
+    font-size: 20px;
+  }
+
+  .serviceWpp p{
+    font-size: 20px;
   }
 
   /* ----- About Service -----*/
