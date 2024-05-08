@@ -10,6 +10,8 @@ html, body{
 
 .bg{
   background-image: url(/static/Design\ sem\ nome.jpg);
+  background-position: center;
+  background-size: cover;
   width: 100%;
 }
 
@@ -168,6 +170,7 @@ html, body{
 /*----- About Section -----*/
 .About{
   background-image: url(/static/Design\ sem\ nome\ \(13\).png);
+  background-size: cover;
   display: flex;
   flex-direction: column;
   align-items: center;
