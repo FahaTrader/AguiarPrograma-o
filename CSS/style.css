@@ -249,6 +249,36 @@ h1 {
   width: 32px;
 }
 
+/*----- Footer Section -----*/
+.footer{
+  display: flex;
+  flex-direction: column;
+  background-image: url(/static/Design\ sem\ nome.jpg);
+  background-size: cover;
+  text-align: center;
+}
+
+.imgFooter{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.imgFooter img{
+  width: 180px;
+  margin-top: 15px;
+}
+
+#footer span{
+  color: #FFFFFF;
+  margin-top: 200px;
+  margin-bottom: 15px;
+}
+
+.footer-redes{
+  padding-top: 15px;
+}
+
 @media (max-width: 546px) {
   .container-fluid{
       padding: 0 1%;
@@ -338,5 +368,9 @@ h1 {
       padding: 75px 0;
       margin: 0 auto;
       width: 352px;
+  }
+
+  .footer-redes{
+    padding-top: 5px;
   }
 }
