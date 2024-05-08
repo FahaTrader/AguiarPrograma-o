@@ -1,238 +1,342 @@
 html, body{
-    font-family: "Sora", sans-serif;
+  font-family: "Sora", sans-serif;
+  width: 100%;
+  height: 100%;
 }
 
 .container-fluid{
-    padding: 0 10%;
+  padding: 0 10%;
 }
 
 .bg{
-    background-image: url(../static/Design\ sem\ nome.jpg);
-    width: 100%;
+  background-image: url(/static/Design\ sem\ nome.jpg);
+  width: 100%;
 }
 
 .navbar-brand img{
-    width: 180px;
+  width: 180px;
 }
 
 .nav-link{
-    font-weight: bold;
-    padding-left: 35px !important;
-    padding-right: 35px !important;
+  font-weight: bold;
+  padding-left: 35px !important;
+  padding-right: 35px !important;
 }
 
 .nav-link:hover{
-    text-decoration: underline 4px solid white;
-    padding-top: 15px;
+  text-decoration: underline 4px solid white;
+  padding-top: 15px;
 }
 
 .container-links{
-    margin-left: 100px;
+  margin-left: 100px;
 }
 
 .container-redes{
-    margin-left: 100px;
+  margin-left: 100px;
 }
 
 .container-redes i{
-    margin-left: 10px;
-    font-size: 18px;
+  margin-left: 10px;
+  font-size: 18px;
 }
 
 .container-redes i:hover{
-    animation: translateY 0.8s infinite alternate;
+  animation: translateY 0.8s infinite alternate;
 }
 
 @keyframes translateY{
-    from{
-        transform: translateY(0) scale(1);
-    }
-    to{
-        transform: translateY(-8px) scale(1.1);
-    }
+  from{
+      transform: translateY(0) scale(1);
+  }
+  to{
+      transform: translateY(-8px) scale(1.1);
+  }
 }
 
 /*----- Hero Section -----*/
 #hero{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
 }
 
 #hero .container-title{
-    flex-direction: column;
-    margin-top: 40px;
-    text-align: center;
-    margin-left: 110px;
+  flex-direction: column;
+  margin-top: 40px;
+  text-align: center;
+  margin-left: 110px;
 }
 
 .title-hero{
-    font-size: 50px;
+  font-size: 50px;
 }
 
 #hero span{
-    color: white;
-    line-height: 150%;
-    max-width: 940px;
-    margin-top: 25px;
-    font-size: 25px;
+  color: white;
+  line-height: 150%;
+  max-width: 940px;
+  margin-top: 25px;
+  font-size: 25px;
 }
 
 .button-hero{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    margin-top: 25px;
-    gap: 15px;
-    padding-bottom: 25px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 25px;
+  gap: 15px;
+  padding-bottom: 25px;
 }
 
 .btn {
-    padding: 1% 5%;
+  padding: 1% 5%;
 }
 
 .btn-serviços{
-    background-color: transparent;
-    color: white;
-    border: solid 0.5px;
-    border-radius: 5px;
+  background-color: transparent;
+  color: white;
+  border: solid 0.5px;
+  border-radius: 5px;
 }
 
 .btn-serviços:hover{
-    background-color: white;
-    color: black;
+  background-color: white;
+  color: black;
 }
 
 .btn:hover{
-    animation: scaleButton 0.8s infinite;
+  animation: scaleButton 0.8s infinite;
 }
 
 @keyframes scaleButton {
-    from{
-        transform: scale(1);
-    }
-    to{
-        transform: scale(1.07);
-    }
+  from{
+      transform: scale(1);
+  }
+  to{
+      transform: scale(1.07);
+  }
 }
 
 /* ----- Service Section ----- */
-.service{
-    text-align: center;
-}
 
 .service-title{
-    text-align: center;
-    font-weight: bold;
-    color: black;
-    padding-top: 25px;
-    text-decoration: underline;
+  text-align: center;
+  font-weight: bold;
+  color: black;
+  padding-top: 25px;
+  text-decoration: underline;
 }
 
 .imgService{
-    width: 350px;
-    float: left;
+  width: 350px;
+  float: left;
 }
 
 .descriptionService{
-    margin-top: 80px;
+  margin-top: 80px;
 }
 
 .descriptionService p{
-    font-size: 26px;
-    color: black;
+  font-size: 26px;
+  color: black;
 }
 
 .img-landing{
-    width: 350px;
-    float: right;
+  width: 350px;
+  float: right;
 }
 
 .imgWpp{
-    width: 350px;
+  width: 350px;
 }
 
 /*----- About Section -----*/
 .About{
-    background-image: url(/static/Design\ sem\ nome\ \(13\).png);
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
+  background-image: url(/static/Design\ sem\ nome\ \(13\).png);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
 }
 
 .about-title{
-    color: white;
-    text-align: center;
-    padding-top: 25px;
-    text-decoration: underline;
-    font-size: 26px;
+  color: white;
+  text-align: center;
+  padding-top: 25px;
+  text-decoration: underline;
+  font-size: 26px;
 }
 
 .img-about{
-    width: 400px;
+  width: 400px;
 }
 
 .aboutDescription {
-    color: white;
+  color: white;
+  font-size: 20px;
+  max-width: 940px;
+  margin-bottom: 20px;
+}
+
+/*----- testimonial Section -----*/
+.container {
+  margin: 0 auto;
+  width: 1140px;
+}
+
+h1 {
+  position: relative;
+  margin-bottom: 45px;
+  font-size: 30px;
+  text-transform: uppercase;
+  color: #000;
+  text-align: center;
+  font-weight: 600;
+  text-decoration: underline;
+}
+
+.gallery-wrap {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  height: 50vh;
+}
+
+.item {
+  flex: 1;
+  height: 100%;
+  background-position: center;
+  background-size: cover;
+  background-repeat: none;
+  transition: flex 0.8s ease;
+  filter: blur(1px);
+  border-radius: 25px;
+}
+.item:hover {
+  flex: 7;
+  filter: blur(0px);
+}
+
+.item-1 {
+  background-image: url("/static/serv1.png");
+}
+
+.item-2 {
+  background-image: url("/static/WhatsApp\ Image\ 2024-05-06\ at\ 17.48.34.png");
+}
+
+.item-3 {
+  background-image: url("/static/WhatsApp\ Image\ 2024-05-07\ at\ 17.34.07.png");
+}
+
+.item-4 {
+  background-image: url("https://images.unsplash.com/photo-1652182992424-44dbb8539072?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D");
+}
+
+.item-5 {
+  background-image: url("https://images.unsplash.com/photo-1671430373742-cfc70b151e79?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D");
+}
+
+.social {
+  position: absolute;
+  right: 35px;
+  bottom: 0;
+}
+.social img {
+  display: block;
+  width: 32px;
 }
 
 @media (max-width: 546px) {
-    .container-fluid{
-        padding: 0 1%;
-    }
+  .container-fluid{
+      padding: 0 1%;
+  }
 
-    .bg{
-        width: 100%;
-    }
+  .bg{
+      width: 100%;
+  }
 
-    .navbar-brand img{
-        width: 150px;
-        margin-left: -20px;
-    }
+  .navbar-brand img{
+      width: 150px;
+      margin-left: -20px;
+  }
 
-    .nav-link{
-        margin-left: 0!important;
-        text-align: center;
-    }
+  .nav-link{
+      margin-left: 0!important;
+      text-align: center;
+  }
 
-    .container-links{
-        text-align: center;
-        margin-left: 0;
-    }
+  .container-links{
+      text-align: center;
+      margin-left: 0;
+  }
 
-    .container-redes{
-        margin-left: 0;
-        text-align: center;
-        margin-top: 10px;
-    }
+  .container-redes{
+      margin-left: 0;
+      text-align: center;
+      margin-top: 10px;
+  }
 
-    /*----- Hero Section -----*/
+  /*----- Hero Section -----*/
 
-    #hero{
-        display: block;
-        align-items: start;
-        justify-content: start;
-    }
+  #hero{
+      display: block;
+      align-items: start;
+      justify-content: start;
+  }
 
-    #hero .container-title{
-        margin-top: 25px;
-        text-align: center;
-        margin-left: 0;
-    }
+  #hero .container-title{
+      margin-top: 25px;
+      text-align: center;
+      margin-left: 0;
+  }
 
-    #hero .title-hero{
-        color: white;
-        font-size: 32px;
-    }
+  #hero .title-hero{
+      color: white;
+      font-size: 32px;
+  }
 
-    .btn {
-        padding: 2% 6%;
-    }
+  #hero span{
+      max-width: 0;
+  }
 
-    .descriptionService p{
-        margin-top: 10px;
-        font-size: 20px;
-    }
+  .btn {
+      padding: 2% 6%;
+  }
+
+  /* ----- Service Section ----- */
+  .service{
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+  }
+
+  .imgService{
+      width: 335px;
+  }
+
+  .descriptionService p{
+      margin-top: 10px;
+      font-size: 20px;
+  }
+
+  /* ----- About Service -----*/
+  .img-about{
+      width: 352px;
+  }
+
+  .aboutDescription{
+      text-align: center;
+      max-width: 800px;
+  }
+
+  /*----- Testimonial Section -----*/
+  .container {
+      padding: 75px 0;
+      margin: 0 auto;
+      width: 352px;
+  }
 }
