@@ -20,6 +20,8 @@ html, body{
 .navbar{
     position: fixed;
     z-index: 999;
+    background: transparent;
+    backdrop-filter: blur(8px);
 }
 
 .navbar-brand img{
@@ -134,68 +136,124 @@ a {
     font-size: 28px;
 }
 
-.glowbutton {
-    --glow-color: rgb(176, 252, 255);
-    --glow-spread-color: rgba(123, 251, 255, 0.781);
-    --enhanced-glow-color: rgb(206, 255, 255);
-    --btn-color: rgb(61, 127, 136);
-    border: 0.25em solid var(--glow-color);
-    padding: 1em 8em;
-    color: var(--glow-color);
-    font-size: 20px;
-    font-weight: bold;
-    background-color: var(--btn-color);
-    border-radius: 1em;
-    outline: none;
-    box-shadow: 0 0 1em 0.25em var(--glow-color),
-      0 0 4em 1em var(--glow-spread-color),
-      inset 0 0 0.75em 0.25em var(--glow-color);
-    text-shadow: 0 0 0.5em var(--glow-color);
+.btn {
+    --border-color: linear-gradient(-45deg, #ffae00, #7e03aa, #00fffb);
+    --border-width: 0.125em;
+    --curve-size: 0.5em;
+    --blur: 30px;
+    --bg: #080312;
+    --color: #afffff;
+    color: var(--color);
+    cursor: pointer;
+    /* use position: relative; so that BG is only for .btn */
     position: relative;
-    transition: all 0.3s;
-    margin-top: 12%;
+    isolation: isolate;
+    display: inline-grid;
+    place-content: center;
+    padding: 1em 5em;
+    font-size: 17px;
+    border: 0;
+    text-transform: uppercase;
+    box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.6);
+    clip-path: polygon(
+      /* Top-left */ 0% var(--curve-size),
+      var(--curve-size) 0,
+      /* top-right */ 100% 0,
+      100% calc(100% - var(--curve-size)),
+      /* bottom-right 1 */ calc(100% - var(--curve-size)) 100%,
+      /* bottom-right 2 */ 0 100%
+    );
+    transition: color 250ms;
+    margin-top: 15%;
   }
   
-  .glowbutton::after {
-    pointer-events: none;
+  .btn::after,
+  .btn::before {
     content: "";
     position: absolute;
-    top: 120%;
-    left: 0;
-    height: 100%;
-    width: 100%;
-    background-color: var(--glow-spread-color);
-    filter: blur(2em);
-    opacity: 0.7;
-    transform: perspective(1.5em) rotateX(35deg) scale(1, 0.6);
+    inset: 0;
   }
   
-  .glowbutton:hover {
-    color: var(--btn-color);
-    background-color: var(--glow-color);
-    box-shadow: 0 0 1em 0.25em var(--glow-color),
-      0 0 4em 2em var(--glow-spread-color),
-      inset 0 0 0.75em 0.25em var(--glow-color);
+  .btn::before {
+    background: var(--border-color);
+    background-size: 300% 300%;
+    animation: move-bg7234 5s ease infinite;
+    z-index: -2;
   }
   
-  .glowbutton:active {
-    box-shadow: 0 0 0.6em 0.25em var(--glow-color),
-      0 0 2.5em 2em var(--glow-spread-color),
-      inset 0 0 0.5em 0.25em var(--glow-color);
+  @keyframes move-bg7234 {
+    0% {
+      background-position: 31% 0%;
+    }
+  
+    50% {
+      background-position: 70% 100%;
+    }
+  
+    100% {
+      background-position: 31% 0%;
+    }
   }
+  
+  .btn::after {
+    background: var(--bg);
+    z-index: -1;
+    clip-path: polygon(
+      /* Top-left */ var(--border-width)
+        calc(var(--curve-size) + var(--border-width) * 0.5),
+      calc(var(--curve-size) + var(--border-width) * 0.5) var(--border-width),
+      /* top-right */ calc(100% - var(--border-width)) var(--border-width),
+      calc(100% - var(--border-width))
+        calc(100% - calc(var(--curve-size) + var(--border-width) * 0.5)),
+      /* bottom-right 1 */
+        calc(100% - calc(var(--curve-size) + var(--border-width) * 0.5))
+        calc(100% - var(--border-width)),
+      /* bottom-right 2 */ var(--border-width) calc(100% - var(--border-width))
+    );
+    transition: clip-path 500ms;
+  }
+  
+  .btn:where(:hover, :focus)::after {
+    clip-path: polygon(
+      /* Top-left */ calc(100% - var(--border-width))
+        calc(100% - calc(var(--curve-size) + var(--border-width) * 0.5)),
+      calc(100% - var(--border-width)) var(--border-width),
+      /* top-right */ calc(100% - var(--border-width)) var(--border-width),
+      calc(100% - var(--border-width))
+        calc(100% - calc(var(--curve-size) + var(--border-width) * 0.5)),
+      /* bottom-right 1 */
+        calc(100% - calc(var(--curve-size) + var(--border-width) * 0.5))
+        calc(100% - var(--border-width)),
+      /* bottom-right 2 */
+        calc(100% - calc(var(--curve-size) + var(--border-width) * 0.5))
+        calc(100% - var(--border-width))
+    );
+    transition: 200ms;
+  }
+  
+  .btn:where(:hover, :focus) {
+    color: #fff;
+  }
+  
 
-/* ----- Service Section ----- */
-#service{
+/* ----- beneficio Section ----- */
+#beneficio{
     background: linear-gradient(#000, #333131);
 }
 
-.service-title{
+.beneficio-title{
     text-align: center;
     font-weight: bold;
     color: white;
     padding-top: 25px;
     text-decoration: underline;
     font-size: 50px;
+}
+
+.container-cards{
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
   
 .card {
@@ -375,7 +433,7 @@ a {
 }
 
 .button-wpp{
-    margin-left: 150px;
+    margin-left: 220px;
 }
 
 .container-wpp{
@@ -413,9 +471,175 @@ a {
     background-color: #000;
     margin-top: 100px;
     border-radius: 20px;
+    margin-right: 40px;
 }
 
-/*----- testimonial Section -----*/
+.container-description{
+    margin-top: 50px;
+    font-size: 24px;
+    text-align: justify;
+    color: #FFF;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    max-width: 700px;
+}
+
+/*----- Selection Section -----*/
+.selection{
+    background-color: #333131;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.container-selection{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-top: 100px;
+}
+
+.title-selection{
+    font-size: 50px;
+    text-decoration: underline;
+    color: white;
+}
+
+.title-desc p{
+    font-size: 24px;
+    color: white;
+    max-width: 700px;
+    text-align: justify;
+    margin-top: 30px;
+}
+
+.cards {
+    perspective: 500px;
+}
+  
+.card-selection {
+    width: 400px;
+    height: 400px;
+    background-image: url(/static/3d-bar-chart-illustration-free-png.webp);
+    background-size: cover;
+    background-position: center;
+    border: none;
+    border-radius: 4px;
+    position: relative;
+    transform-style: preserve-3d;
+    will-change: transform;
+    transition: transform .5s;
+    margin-left: 60px;
+    backdrop-filter: blur(55px);
+}
+  
+.card-selection:hover {
+    transform: translateZ(10px) rotateX(20deg) rotateY(20deg);
+}
+  
+.card_title {
+    color: #fff;
+    position: absolute;
+    top: 50%;
+    right: 20px;
+    transform: translateY(-50%);
+    transition: transform .5s;
+    font: 700 1.5rem monospace;
+    text-shadow: -1px -1px 0 #000,  
+    1px -1px 0 #000,
+    -1px 1px 0 #000,
+    1px 1px 0 #000;
+}
+  
+.card-selection:hover .card_title {
+    transform: translateZ(50px);
+}
+
+.button-selection{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.btn-selection{
+    margin-top: 70px;
+    margin-bottom: 70px;
+}
+
+/*----- Service Section -----*/
+.service{
+    background-color: #333131;
+    z-index: 9999;
+}
+
+.container-service{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 35px;
+}
+
+.title-service{
+    color: #FFF;
+    text-align: center;
+    font-size: 50px;
+    text-decoration: underline;
+    padding-top: 100px;
+}
+
+.card-service {
+    height: 450px;
+    width: 350px;
+    position: relative;
+    transition: all 0.4s cubic-bezier(0.645, 0.045, 0.355, 1);
+    border-radius: 16px;
+    box-shadow: 0 0 20px 8px #d0d0d0;
+    overflow: hidden;
+    margin-top: 50px;
+}
+  
+/*Image*/
+.card-image {
+    width: 20%;
+    position: absolute;
+    transition: all 1s cubic-bezier(0.645, 0.045, 0.355, 1);
+}
+
+.card-image img{
+    width: 350px;
+}
+  
+/*Description */
+.card-description {
+    display: flex;
+    position: absolute;
+    gap: .5em;
+    flex-direction: column;
+    background-color: #f5f5f5;
+    color: #212121;
+    height: 70%;
+    bottom: 0;
+    border-radius: 16px;
+    transition: all 1s cubic-bezier(0.645, 0.045, 0.355, 1);
+    padding: 1rem;
+}
+  
+/*Text*/
+.text-title {
+    font-size: 1.3rem;
+    font-weight: 700;
+}
+  
+.text-body {
+    font-size: 1rem;
+    line-height: 130%;
+}
+  
+/* Hover states */
+.card-service:hover .card-description {
+    transform: translateY(100%);
+}
 
 @media (max-width: 721px) {
     .container-fluid{
@@ -472,18 +696,18 @@ a {
         margin-top: 55px;
     }
 
-    .glowbutton{
+    .btn{
         margin-top: 40%;
         padding: 0.6em 1.5em;
     }
 
     #hero p{
         font-size: 24px;
-        max-width: 365px;
+        max-width: 349px;
     }
 
-    /* ----- Service Section ----- */
-    .service{
+    /* ----- beneficio Section ----- */
+    .beneficio{
         display: flex;
         flex-direction: column;
         align-items: center;
@@ -491,7 +715,7 @@ a {
         text-align: center;
     }
 
-    .service-title{
+    .beneficio-title{
         font-size: 30px;
     }
 
