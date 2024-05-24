@@ -719,6 +719,11 @@ a {
         font-size: 30px;
     }
 
+    .container-cards{
+        display: flex;
+        flex-direction: column;
+    }
+
     .card{
         width: 310px;
         height: 250px;
@@ -788,8 +793,48 @@ a {
         font-size: 38px;
     }
 
+    .container-about{
+        flex-direction: column;
+    }
+
     .logo-about{
-        width: 320px;
+        width: 350px;
         margin-top: 50px;
+    }
+
+    .container-description{
+        font-size: 18px;
+        text-align: justify;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        max-width: 300px;
+    }
+
+    /*----- Selection Section -----*/
+    .container-selection{
+        flex-direction: column;
+        text-align: center;
+        font-size: 35px;
+    }
+
+    .desc-selection p{
+        font-size: 18px;
+    }
+
+    .card-selection {
+        width: 320px;
+        height: 300px;
+        margin-left: 0;
+        margin-top: 20px;
+    }
+
+    /*----- Service Section -----*/
+    .container-service{
+        flex-direction: column;
+    }
+
+    .title-service{
+        font-size: 35px;
     }
 }
