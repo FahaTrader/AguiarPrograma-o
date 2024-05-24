@@ -800,6 +800,7 @@ a {
     .logo-about{
         width: 350px;
         margin-top: 50px;
+        margin-right: 0;
     }
 
     .container-description{
