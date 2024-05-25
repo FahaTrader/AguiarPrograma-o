@@ -569,7 +569,7 @@ a {
 
 /*----- Service Section -----*/
 .service{
-    background-color: #333131;
+    background: linear-gradient(#333131, #000);
     z-index: 9999;
 }
 
@@ -578,6 +578,7 @@ a {
     align-items: center;
     justify-content: center;
     gap: 35px;
+    padding-bottom: 50px;
 }
 
 .title-service{
@@ -639,6 +640,125 @@ a {
 /* Hover states */
 .card-service:hover .card-description {
     transform: translateY(100%);
+}
+
+/*----- Footer Section -----*/
+.footer{
+    background-color: #000;
+    height: 200px;
+}
+
+.container-footer{
+    display: flex;
+    justify-content: center;
+    margin-left: 150px;
+}
+
+.container-des{
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.title-footer{
+    font-size: 30px;
+    color: white;
+    text-decoration: underline #7e03aa;
+}
+
+.desc-footer{
+    font-size: 20px;
+    color: white;
+    margin-top: 15px;
+}
+
+.desc-footer:hover{
+    color: white;
+}
+
+hr{
+    border: solid 1px #7e03aa;
+    width: 90%;
+}
+
+.card-footer {
+    display: flex;
+    height: 70px;
+    width: 270px;
+    margin-left: -20px;
+}
+
+.p-footer{
+    color: #FFF;
+    text-align: center;
+    font-size: 20px;
+}
+  
+.card-footer svg {
+    position: absolute;
+    display: flex;
+    width: 60%;
+    height: 100%;
+    font-size: 24px;
+    font-weight: 700;
+    opacity: 1;
+    transition: opacity 0.25s;
+    z-index: 2;
+    cursor: pointer;
+}
+  
+.card-footer .social-link1,.card-footer .social-link2,.card-footer .social-link3,.card-footer .social-link4 {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 25%;
+    color: whitesmoke;
+    font-size: 24px;
+    text-decoration: none;
+    transition: 0.25s;
+    border-radius: 50px;
+}
+  
+.card-footer svg {
+    transform: scale(1);
+}
+  
+.card-footer .social-link1:hover {
+    background: #f09433;
+    background: -moz-linear-gradient(45deg, #f09433 0%, #e6683c 25%, #dc2743 50%, #cc2366 75%, #bc1888 100%);
+    background: -webkit-linear-gradient(45deg, #f09433 0%,#e6683c 25%,#dc2743 50%,#cc2366 75%,#bc1888 100%);
+    background: linear-gradient(45deg, #f09433 0%,#e6683c 25%,#dc2743 50%,#cc2366 75%,#bc1888 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f09433', endColorstr='#bc1888',GradientType=1 );
+    animation: bounce_613 0.4s linear;
+}
+  
+.card-footer .social-link3:hover {
+    background-color: #5865f2;
+    animation: bounce_613 0.4s linear;
+}
+  
+.card-footer .social-link4:hover {
+    background-color: #12a50b;
+    animation: bounce_613 0.4s linear;
+}
+  
+@keyframes bounce_613 {
+    40% {
+      transform: scale(1.4);
+    }
+  
+    60% {
+      transform: scale(0.8);
+    }
+  
+    80% {
+      transform: scale(1.2);
+    }
+  
+    100% {
+      transform: scale(1);
+    }
 }
 
 @media (max-width: 721px) {
@@ -809,7 +929,7 @@ a {
         display: flex;
         align-items: center;
         justify-content: center;
-        max-width: 350px;
+        max-width: 300px;
     }
 
     /*----- Selection Section -----*/
@@ -835,7 +955,43 @@ a {
         flex-direction: column;
     }
 
+    .card-service{
+        width: 300px;
+    }
+
     .title-service{
         font-size: 35px;
+    }
+
+    /*----- Footer Section -----*/
+    .footer{
+        height: 400px;
+        text-align: center;
+    }
+
+    .container-des{
+        gap: 0;
+    }
+
+    .container-footer{
+        margin-left: 0;
+    }
+
+    .card-footer{
+        margin-left: 55px;
+        width: 230px;
+    }
+
+    .title-footer{
+        margin-top: 10px;
+        font-size: 25px;
+    }
+
+    .desc-footer{
+        font-size: 17px;
+    }
+
+    .p-footer{
+        font-size: 17px;
     }
 }
