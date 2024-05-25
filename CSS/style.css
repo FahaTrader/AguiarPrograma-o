@@ -17,6 +17,17 @@ html, body{
     height: 750px;
 }
 
+.wpp{
+  position: fixed;
+  right: 15px;
+  bottom: 15px;
+  z-index: 9999;
+}
+
+.wpp img{
+  width: 60px;
+}
+
 .navbar{
     position: fixed;
     z-index: 999;
@@ -958,6 +969,10 @@ hr{
     .card-service{
         width: 300px;
     }
+    
+    .card-image img{
+      width: 300px;
+    }
 
     .title-service{
         font-size: 35px;
@@ -974,11 +989,12 @@ hr{
     }
 
     .container-footer{
+        display: block;
         margin-left: 0;
     }
 
     .card-footer{
-        margin-left: 55px;
+        margin-left: 85px;
         width: 230px;
     }
 
