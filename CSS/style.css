@@ -971,8 +971,17 @@ hr{
     }
     
     .card-image img{
-      width: 300px;
+        width: 300px;
+        height: 400px;
     }
+
+    .text-title {
+        font-size: 1.6rem;
+    }
+
+    .text-body{
+        font-size: 1rem;
+    }    
 
     .title-service{
         font-size: 35px;
