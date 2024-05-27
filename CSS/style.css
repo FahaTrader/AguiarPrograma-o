@@ -345,7 +345,7 @@ a {
     padding-left: 8px;
 }
 
-.card-footer{
+#beneficio .card-footer{
     color: white;
     border: none;
     font-size: 18px;
@@ -867,10 +867,6 @@ hr{
 
     .card__description{
         font-size: 18px;
-    }
-
-    .card-footer{
-        margin-right: 80px;
     }
 
     .go-arrow{
