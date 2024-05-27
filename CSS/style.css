@@ -350,6 +350,7 @@ a {
     border: none;
     font-size: 18px;
     background-color: transparent;
+    backdrop: blur(25px);
 }
 
 .img1{
