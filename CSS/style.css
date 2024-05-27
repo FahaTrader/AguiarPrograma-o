@@ -176,23 +176,23 @@ a {
     );
     transition: color 250ms;
     margin-top: 15%;
-  }
+}
   
-  .btn::after,
-  .btn::before {
+.btn::after,
+.btn::before {
     content: "";
     position: absolute;
     inset: 0;
-  }
+}
   
-  .btn::before {
+.btn::before {
     background: var(--border-color);
     background-size: 300% 300%;
     animation: move-bg7234 5s ease infinite;
     z-index: -2;
-  }
+}
   
-  @keyframes move-bg7234 {
+@keyframes move-bg7234 {
     0% {
       background-position: 31% 0%;
     }
@@ -204,9 +204,9 @@ a {
     100% {
       background-position: 31% 0%;
     }
-  }
+}
   
-  .btn::after {
+.btn::after {
     background: var(--bg);
     z-index: -1;
     clip-path: polygon(
@@ -222,9 +222,9 @@ a {
       /* bottom-right 2 */ var(--border-width) calc(100% - var(--border-width))
     );
     transition: clip-path 500ms;
-  }
+}
   
-  .btn:where(:hover, :focus)::after {
+.btn:where(:hover, :focus)::after {
     clip-path: polygon(
       /* Top-left */ calc(100% - var(--border-width))
         calc(100% - calc(var(--curve-size) + var(--border-width) * 0.5)),
@@ -240,11 +240,74 @@ a {
         calc(100% - var(--border-width))
     );
     transition: 200ms;
-  }
+}
   
-  .btn:where(:hover, :focus) {
+.btn:where(:hover, :focus) {
     color: #fff;
-  }
+}
+
+.svg-frame {
+    position: relative;
+    width: 300px;
+    height: 300px;
+    transform-style: preserve-3d;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 60px;
+}
+  
+.svg-frame svg {
+    position: absolute;
+    transition: .5s;
+    z-index: calc(1 - (0.2 * var(--j)));
+    transform-origin: center;
+    width: 344px;
+    height: 344px;
+    fill: none;
+}
+  
+.svg-frame:hover svg {
+    transform: rotate(-80deg) skew(30deg) translateX(calc(45px * var(--i))) translateY(calc(-35px * var(--i)));
+}
+  
+.svg-frame svg #center {
+    transition: .5s;
+    transform-origin: center;
+}
+  
+.svg-frame:hover svg #center {
+    transform: rotate(-30deg) translateX(45px) translateY(-3px);
+}
+  
+#out2 {
+    animation: rotate16 7s ease-in-out infinite alternate;
+    transform-origin: center;
+}
+  
+#out3 {
+    animation: rotate16 3s ease-in-out infinite alternate;
+    transform-origin: center;
+    stroke: #ff0;
+}
+  
+#inner3,
+#inner1 {
+    animation: rotate16 4s ease-in-out infinite alternate;
+    transform-origin: center;
+}
+  
+#center1 {
+    fill: #ff0;
+    animation: rotate16 2s ease-in-out infinite alternate;
+    transform-origin: center;
+}
+  
+@keyframes rotate16 {
+    to {
+      transform: rotate(360deg);
+    }
+}
   
 
 /* ----- beneficio Section ----- */
@@ -350,7 +413,6 @@ a {
     border: none;
     font-size: 18px;
     background-color: transparent;
-    backdrop: blur(25px);
     text-align: center;
 }
 
