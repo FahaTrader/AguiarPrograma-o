@@ -869,6 +869,10 @@ hr{
         font-size: 18px;
     }
 
+    .card-footer{
+        margin-right: 80px;
+    }
+
     .go-arrow{
         font-size: 20px;
         right: -5px;
@@ -940,7 +944,7 @@ hr{
         display: flex;
         align-items: center;
         justify-content: center;
-        max-width: 300px;
+        max-width: 450px;
     }
 
     /*----- Selection Section -----*/
