@@ -720,7 +720,7 @@ hr{
     cursor: pointer;
 }
   
-#footer .card-footer .social-link1, #footer .card-footer .social-link2,. #footer card-footer .social-link3, #footer .card-footer .social-link4 {
+#footer .card-footer .social-link1, .card-footer .social-link2, #footer .card-footer .social-link3, #footer .card-footer .social-link4 {
     position: relative;
     display: flex;
     align-items: center;
