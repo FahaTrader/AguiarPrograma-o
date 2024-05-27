@@ -1072,7 +1072,7 @@ hr{
         margin-left: 0;
     }
 
-    .card-footer{
+    #footer .card-footer{
         margin-left: 85px;
         width: 230px;
     }
