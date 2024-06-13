@@ -5,7 +5,7 @@ html, body{
 }
 
 .container-fluid{
-    padding: 0 9%;
+    padding: 0 8%;
 }
 
 .bg{
@@ -39,16 +39,21 @@ html, body{
     width: 220px;
 }
 
+.navbar-nav{
+    display: flex;
+    gap: 20px;
+}
+
 .nav-link{
     color: #FFF;
     font-weight: bold;
-    padding-left: 35px !important;
-    padding-right: 35px !important;
+    transition: all 0.2s;
 }
 
 .nav-link:hover{
     color: #FFF;
-    border-bottom: solid #FFF;
+    transform: translateY(-5px);
+    text-decoration: underline 4px;
 }
 
 .container-links{
@@ -684,21 +689,6 @@ a {
 
 .card-image img{
     width: 350px;
-}
-  
-/*Description */
-.card-description {
-    display: flex;
-    position: absolute;
-    gap: .5em;
-    flex-direction: column;
-    background-color: #f5f5f5;
-    color: #212121;
-    height: 70%;
-    bottom: 0;
-    border-radius: 16px;
-    transition: all 1s cubic-bezier(0.645, 0.045, 0.355, 1);
-    padding: 1rem;
 }
   
 /*Text*/
