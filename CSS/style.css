@@ -33,6 +33,7 @@ html, body{
     z-index: 999;
     background: transparent;
     backdrop-filter: blur(8px);
+    width: 100%; 
 }
 
 .navbar-brand img{
