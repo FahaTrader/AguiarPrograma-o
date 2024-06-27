@@ -852,18 +852,19 @@ hr{
     }
 
     .container-redes{
-        margin-left: 0;
-        text-align: center;
-        margin-top: 10px;
+        display: none;
     }
 
     .navbar{
         position: static;
         z-index: 1;
         margin: 0;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
     }
 
-    /*----- Hero Section -----*/
+    /*----------------------------------------- Hero Section -----------------------------------------*/
     #hero{
         display: flex;
         align-items: center;
@@ -898,7 +899,7 @@ hr{
         max-width: 349px;
     }
 
-    /* ----- beneficio Section ----- */
+    /* ----------------------------------------- beneficio Section ----------------------------------------- */
     .beneficio{
         display: flex;
         flex-direction: column;
@@ -980,7 +981,7 @@ hr{
         flex-direction: column;
     }
 
-    /*----- About Section -----*/
+    /*----------------------------------------- About Section -----------------------------------------*/
     .title-about{
         font-size: 38px;
     }
@@ -1004,7 +1005,7 @@ hr{
         max-width: 450px;
     }
 
-    /*----- Selection Section -----*/
+    /*----------------------------------------- Selection Section -----------------------------------------*/
     .container-selection{
         flex-direction: column;
         text-align: center;
