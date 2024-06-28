@@ -2,6 +2,9 @@ html, body{
     font-family: "Sora", sans-serif;
     width: 100%;
     height: 100%;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
 .container-fluid{
@@ -34,6 +37,9 @@ html, body{
     background: transparent;
     backdrop-filter: blur(8px);
     width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
 }
 
 .navbar-brand img{
@@ -42,14 +48,14 @@ html, body{
 
 .navbar-nav{
     display: flex;
-    gap: 20px;
+    gap: 15px;
 }
 
 .nav-link{
     color: #FFF;
     font-weight: 600;
     transition: all 0.2s;
-    font-size: 15px;
+    font-size: 14px;
 }
 
 .nav-link:hover{
@@ -455,6 +461,21 @@ a {
     padding-bottom: 100px;
     margin-right: 40px;
 }
+
+.click{
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+    color: #FFF;
+    font-weight: bold;
+}
+
+.card-aut:hover .click{
+    display: none;
+}
   
 .card-aut::before {
     content: "";
@@ -834,6 +855,13 @@ hr{
     .bg{
         width: 100%;
         min-height: 750px;
+    }
+
+    .container-nav{
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
     }
 
     .navbar-brand img{
