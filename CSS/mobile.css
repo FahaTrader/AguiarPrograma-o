@@ -1,0 +1,815 @@
+@media (max-width: 431px) {
+  .container-fluid{
+      padding: 0 1%;
+  }
+
+  .navbar{
+      width: 100%;
+  }
+
+  .bg{
+      width: 100%;
+      min-height: 750px;
+  }
+
+  .container-nav{
+      width: 100%;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+  }
+
+  .navbar-brand img{
+      width: 150px;
+      margin-left: -20px;
+  }
+
+  .nav-link{
+      margin-left: 0!important;
+      text-align: center;
+  }
+
+  .container-links{
+      text-align: center;
+      margin-left: 0;
+  }
+
+  .container-redes{
+      display: none;
+  }
+
+  .navbar{
+      position: static;
+      z-index: 1;
+      margin: 0;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+  }
+
+  /*----------------------------------------- Hero Section -----------------------------------------*/
+  #hero{
+      display: flex;
+      align-items: center;
+      justify-content: center;
+  }
+
+  #hero .container-title{
+      margin-top: 15px;
+      text-align: center;
+      margin-left: 0;
+  }
+
+  #hero .title-hero{
+      color: white;
+      font-size: 2.2rem;
+      margin-top: 55px;
+  }
+
+  .svg-frame{
+      margin-top: 10px;
+      width: 200px;
+      height: 200px;
+  }
+
+  .btn{
+      margin-top: 40%;
+      padding: 0.6em 1.5em;
+  }
+
+  #hero p{
+      font-size: 24px;
+      max-width: 349px;
+  }
+
+  /* ----------------------------------------- beneficio Section ----------------------------------------- */
+  .beneficio{
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+  }
+
+  .beneficio-title{
+      font-size: 30px;
+  }
+
+  .container-cards{
+      display: flex;
+      flex-direction: column;
+  }
+
+  .card{
+      width: 310px;
+      height: 250px;
+      margin: 45px 0;
+  }
+
+  .card__title{
+      font-size: 25px;
+  }
+
+  .card__description{
+      font-size: 18px;
+  }
+
+  .go-arrow{
+      font-size: 20px;
+      right: -5px;
+      padding-left: 0px;
+  }
+
+  .card-aut {
+      width: 200px;
+      height: 350px;
+      margin-top: 50px;
+      margin-right: 0;
+  }
+
+  .card-aut::before{
+      right: 85px;
+      font-size: 50px;
+  }
+
+  .time {
+      font-size:1.8em;
+  }
+
+  .popup {
+      background-color: #444746;
+      border-radius: 5px;
+      display: flex;
+      flex-direction: column;
+      font-size: 1em;
+      padding: 15px;
+  }
+    
+  .popup .title {
+      font-size: .8rem;
+      color: #9cbde2;
+  }
+
+  .card-wpp p{
+      font-size: 18px;
+      max-width: 400px;
+      text-align: center;
+      text-align: justify;
+  }
+
+  .button-wpp{
+      margin-left: 0;
+  }
+
+  .container-wpp{
+      flex-direction: column;
+  }
+
+  /*----------------------------------------- About Section -----------------------------------------*/
+  .title-about{
+      font-size: 38px;
+  }
+
+  .container-about{
+      flex-direction: column;
+  }
+
+  .logo-about{
+      width: 350px;
+      margin-top: 50px;
+      margin-right: 0;
+  }
+
+  .container-description{
+      font-size: 18px;
+      text-align: justify;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      max-width: 400px;
+  }
+
+  /*----------------------------------------- Selection Section -----------------------------------------*/
+  .container-selection{
+      flex-direction: column;
+      text-align: center;
+      font-size: 35px;
+  }
+
+  .title-desc{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .desc-selection{
+      text-align: justify;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      max-width: 400px;
+  }
+
+  .desc-selection p{
+      font-size: 18px;
+  }
+
+  .card-selection {
+      width: 320px;
+      height: 300px;
+      margin-left: 0;
+      margin-top: 20px;
+  }
+
+  /*----------------------------------------- Service Section -----------------------------------------*/
+  .container-service{
+      flex-direction: column;
+  }
+
+  .card-service{
+      width: 300px;
+      height: 400px;
+  }
+  
+  .card-image img{
+      width: 300px;
+  }
+
+  .text-title {
+      font-size: 1.6rem;
+  }
+
+  .text-body{
+      font-size: 1rem;
+  }    
+
+  .title-service{
+      font-size: 35px;
+  }
+
+  /*----------------------------------------- Footer Section -----------------------------------------*/
+  .footer{
+    height: 400px;
+    text-align: center;
+  }
+
+  .container-des{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0;
+  }
+
+  .container-footer{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-left: 0;
+  }
+
+  #footer .card-footer{
+      margin-left: 85px;
+      width: 230px;
+  }
+
+  .title-footer{
+      margin-top: 10px;
+      font-size: 25px;
+  }
+
+  .desc-footer{
+      font-size: 17px;
+  }
+
+  .p-footer{
+      font-size: 17px;
+  }
+
+  #footer .card-footer{
+    margin-left: 0;
+    display: flex;
+    justify-content: center;
+  }
+}
+
+@media (min-width: 432px) and (max-width: 721px){
+  .container-fluid{
+    padding: 0 1%;
+  }
+
+  .navbar{
+    width: 100%;
+  }
+
+  .bg{
+    width: 100%;
+    min-height: 750px;
+  }
+
+  .container-nav{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  .navbar-brand img{
+    width: 150px;
+    margin-left: -20px;
+  }
+
+  .nav-link{
+    margin-left: 0!important;
+    text-align: center;
+  }
+
+  .container-links{
+    text-align: center;
+    margin-left: 0;
+  }
+
+  .container-redes{
+    display: none;
+  }
+
+  .navbar{
+    padding: 0.5rem 3rem;
+    position: static;
+    z-index: 1;
+    margin: 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  /* ----------------------------------------- beneficio Section ----------------------------------------- */
+  .beneficio{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+  }
+
+  .beneficio-title{
+      font-size: 30px;
+  }
+
+  .container-cards{
+      display: flex;
+      flex-direction: column;
+  }
+
+  .card{
+      width: 310px;
+      height: 250px;
+      margin: 45px 0;
+  }
+
+  .card__title{
+      font-size: 25px;
+  }
+
+  .card__description{
+      font-size: 18px;
+  }
+
+  .go-arrow{
+      font-size: 20px;
+      right: -5px;
+      padding-left: 0px;
+  }
+
+  .card-aut {
+      width: 200px;
+      height: 350px;
+      margin-top: 50px;
+      margin-right: 0;
+  }
+
+  .card-aut::before{
+      right: 85px;
+      font-size: 50px;
+  }
+
+  .time {
+      font-size:1.8em;
+  }
+
+  .popup {
+      background-color: #444746;
+      border-radius: 5px;
+      display: flex;
+      flex-direction: column;
+      font-size: 1em;
+      padding: 15px;
+  }
+    
+  .popup .title {
+      font-size: .8rem;
+      color: #9cbde2;
+  }
+
+  .card-wpp p{
+      font-size: 18px;
+      max-width: 550px;
+      text-align: center;
+      text-align: justify;
+  }
+
+  .button-wpp{
+      margin-left: 0;
+  }
+
+  .container-wpp{
+      flex-direction: column;
+  }
+
+  /*----------------------------------------- About Section -----------------------------------------*/
+  .title-about{
+    font-size: 38px;
+  }
+
+  .container-about{
+    flex-direction: column;
+  }
+
+  .logo-about{
+    width: 450px;
+    margin-top: 50px;
+    margin-right: 0;
+  }
+
+  .container-description{
+    font-size: 18px;
+    text-align: justify;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    max-width: 550px;
+  }
+
+  /*----------------------------------------- Selection Section -----------------------------------------*/
+  .container-selection{
+    flex-direction: column;
+    text-align: center;
+    font-size: 35px;
+  }
+
+  .title-desc{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .desc-selection{
+    text-align: justify;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    max-width: 550px;
+  }
+
+  .desc-selection p{
+    font-size: 18px;
+  }
+
+  .card-selection {
+    width: 320px;
+    height: 300px;
+    margin-left: 0;
+    margin-top: 20px;
+  }
+  /*----------------------------------------- Service Section -----------------------------------------*/
+  .container-service{
+    display: grid;
+  }
+
+  .card-service{
+    width: 300px;
+    height: 400px;
+  }
+
+  .card-image img{
+    width: 300px;
+  }
+
+  .text-title {
+    font-size: 1.6rem;
+  }
+
+  .text-body{
+    font-size: 1rem;
+  }    
+
+  .title-service{
+    font-size: 35px;
+  }
+
+  /*----------------------------------------- Footer Section -----------------------------------------*/
+  .footer{
+    height: 400px;
+    text-align: center;
+  }
+
+  .container-des{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0;
+  }
+
+  .container-footer{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-left: 0;
+  }
+
+  #footer .card-footer{
+    margin-left: 85px;
+    width: 230px;
+  }
+
+  .title-footer{
+    margin-top: 10px;
+    font-size: 25px;
+  }
+
+  .desc-footer{
+    font-size: 17px;
+  }
+
+  .p-footer{
+    font-size: 17px;
+  }
+
+  #footer .card-footer{
+    margin-left: 0;
+    display: flex;
+    justify-content: center;
+  }
+}
+
+@media (min-width: 722px) and (max-width: 991px){
+  .container-fluid{
+    padding: 0 2%;
+  }
+
+  .bg{
+    width: 100%;
+    min-height: 750px;
+  }
+
+  .container-nav{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  .navbar-brand img{
+    width: 150px;
+  }
+
+  .nav-link{
+    margin-left: 0!important;
+    text-align: center;
+  }
+
+  .container-links{
+    text-align: center;
+    margin-left: 0;
+  }
+
+  .container-redes{
+    display: none;
+  }
+
+  .navbar{
+    padding: 0.5rem 3rem;
+    position: static;
+    z-index: 1;
+    margin: 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  /* ----------------------------------------- beneficio Section ----------------------------------------- */
+  .beneficio{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+  }
+
+  .beneficio-title{
+      font-size: 30px;
+  }
+
+  .container-cards{
+      display: flex;
+      flex-direction: column;
+  }
+
+  .card{
+      width: 310px;
+      height: 250px;
+      margin: 45px 0;
+  }
+
+  .card__title{
+      font-size: 25px;
+  }
+
+  .card__description{
+      font-size: 18px;
+  }
+
+  .go-arrow{
+      font-size: 20px;
+      right: -5px;
+      padding-left: 0px;
+  }
+
+  .card-aut {
+      width: 200px;
+      height: 350px;
+      margin-top: 50px;
+      margin-right: 0;
+  }
+
+  .card-aut::before{
+      right: 85px;
+      font-size: 50px;
+  }
+
+  .time {
+      font-size:1.8em;
+  }
+
+  .popup {
+      background-color: #444746;
+      border-radius: 5px;
+      display: flex;
+      flex-direction: column;
+      font-size: 1em;
+      padding: 15px;
+  }
+    
+  .popup .title {
+      font-size: .8rem;
+      color: #9cbde2;
+  }
+
+  .card-wpp p{
+      font-size: 18px;
+      max-width: 750px;
+      text-align: center;
+      text-align: center;
+  }
+
+  .button-wpp{
+      margin-left: 0;
+  }
+
+  .container-wpp{
+      flex-direction: column;
+  }
+
+  /*----------------------------------------- About Section -----------------------------------------*/
+  .title-about{
+    font-size: 38px;
+  }
+
+  .container-about{
+    flex-direction: column;
+  }
+
+  .logo-about{
+    width: 450px;
+    margin-top: 50px;
+    margin-right: 0;
+  }
+
+  .container-description{
+    font-size: 18px;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    max-width: 750px;
+  }
+
+  /*----------------------------------------- Selection Section -----------------------------------------*/
+  .container-selection{
+    flex-direction: column;
+    text-align: center;
+    font-size: 35px;
+  }
+
+  .title-desc{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .desc-selection{
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    max-width: 750px;
+  }
+
+  .desc-selection p{
+    font-size: 18px;
+  }
+
+  .card-selection {
+    width: 320px;
+    height: 300px;
+    margin-left: 0;
+    margin-top: 20px;
+  }
+  /*----------------------------------------- Service Section -----------------------------------------*/
+  .container-service{
+    display: grid;
+  }
+
+  .card-service{
+    width: 300px;
+    height: 400px;
+  }
+
+  .card-image img{
+    width: 300px;
+  }
+
+  .text-title {
+    font-size: 1.6rem;
+  }
+
+  .text-body{
+    font-size: 1rem;
+  }    
+
+  .title-service{
+    font-size: 35px;
+  }
+
+  /*----------------------------------------- Footer Section -----------------------------------------*/
+  .footer{
+    height: 400px;
+    text-align: center;
+  }
+
+  .container-des{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0;
+  }
+
+  .container-footer{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-left: 0;
+  }
+
+  #footer .card-footer{
+    margin-left: 85px;
+    width: 230px;
+  }
+
+  .title-footer{
+    margin-top: 10px;
+    font-size: 25px;
+  }
+
+  .desc-footer{
+    font-size: 17px;
+  }
+
+  .p-footer{
+    font-size: 17px;
+  }
+
+  #footer .card-footer{
+    margin-left: 0;
+    display: flex;
+    justify-content: center;
+  }
+}
